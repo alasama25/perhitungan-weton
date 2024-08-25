@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Weton Jawa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>Perhitungan Weton Jawa</h1>
+            <p>gw cuman gabut ya njir bikin ginain, jangan terlalu di percaya wkwk</p>
+        </div>
+        <div class="form-container">
+            <form id="wetonForm">
+                <div class="input-group">
+                    <label for="hari1">Hari Kelahiran Pasangan 1:</label>
+                    <select id="hari1" required>
+                        <option value="" disabled selected>Pilih Hari</option>
+                        <option value="7">Minggu</option>
+                        <option value="4">Senin</option>
+                        <option value="3">Selasa</option>
+                        <option value="7">Rabu</option>
+                        <option value="8">Kamis</option>
+                        <option value="6">Jumat</option>
+                        <option value="9">Sabtu</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="pasaran1">Pasaran Kelahiran Pasangan 1:</label>
+                    <select id="pasaran1" required>
+                        <option value="" disabled selected>Pilih Pasaran</option>
+                        <option value="5">Legi</option>
+                        <option value="9">Pahing</option>
+                        <option value="7">Pon</option>
+                        <option value="4">Wage</option>
+                        <option value="8">Kliwon</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="hari2">Hari Kelahiran Pasangan 2:</label>
+                    <select id="hari2" required>
+                        <option value="" disabled selected>Pilih Hari</option>
+                        <option value="7">Minggu</option>
+                        <option value="4">Senin</option>
+                        <option value="3">Selasa</option>
+                        <option value="7">Rabu</option>
+                        <option value="8">Kamis</option>
+                        <option value="6">Jumat</option>
+                        <option value="9">Sabtu</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="pasaran2">Pasaran Kelahiran Pasangan 2:</label>
+                    <select id="pasaran2" required>
+                        <option value="" disabled selected>Pilih Pasaran</option>
+                        <option value="5">Legi</option>
+                        <option value="9">Pahing</option>
+                        <option value="7">Pon</option>
+                        <option value="4">Wage</option>
+                        <option value="8">Kliwon</option>
+                    </select>
+                </div>
+                <button type="button" onclick="hitungWeton()">Cek Kecocokan</button>
+            </form>
+        </div>
+        <div id="hasil" class="result"></div>
+
+        <!-- Modal for more details -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>Hasil Kecocokan</h2>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.instagram.com/alhsnmlk15_" target="_blank" class="social-button instagram">Instagram</a>
+        <a href="https://www.tiktok.com/@aalzzzyy" target="_blank" class="social-button tiktok">TikTok</a>
+        <a href="https://wa.me/+6281252878350" target="_blank" class="social-button whatsapp">WhatsApp</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

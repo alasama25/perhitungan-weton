@@ -63,7 +63,7 @@ function hitungWeton() {
         <p>Total Neptu Pasangan 2: ${neptu2}</p>
         <h2>${hasil}</h2>
         <p>${penjelasan}</p>
-        <p><strong>Catatan:</strong> Ingat ya jangan terlalu di percaya, jangan lupa balik lagi yang tadi, masih sisa 1 website wkwk </p>
+        <p><strong>Catatan:</strong> !!!!!! </p>
     `;
     
     // Menampilkan modal
